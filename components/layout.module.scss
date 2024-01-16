@@ -1,0 +1,92 @@
+@use '../style/mixins';
+
+.myFooter {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}
+
+.lastColor {
+  color: rgba(0, 0, 0, 0.5);
+  padding-top: 0.8rem;
+}
+
+.addBorder {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.nonBorder {
+  border: 2px solid transparent;
+}
+
+.moreMargin {
+  padding: 0rem 0.5rem !important;
+  margin: 0.5rem 0.5rem;
+}
+
+@include mixins.breakpoint(m) {
+  .moreMargin {
+    margin: 0.5rem 1rem;
+  }
+}
+
+.navEndSettings {
+  & a:nth-child(3) {
+    margin-right: 0;
+  }
+}
+
+.burgerExtra {
+  padding-right: 0.75rem;
+}
+
+.navbar {
+  min-height: 3.25rem;
+  background-color: transparent;
+  position: relative;
+  z-index: 30;
+  box-shadow: 0 2px 0 0 #f5f5f5;
+  & > div {
+    align-items: stretch;
+    display: flex;
+    min-height: 3.25rem;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.navbarBrand {
+  align-items: stretch;
+  display: flex;
+  flex-shrink: 0;
+  min-height: 3.25rem;
+  margin-left: -0.75rem;
+}
+
+.navbarMenu {
+//   margin-right: -0.75rem;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.navbarEnd {
+  justify-content: flex-end;
+  margin-left: auto;
+  align-items: stretch;
+  display: flex;
+}
+
+.navbarItem {
+  &a {
+    cursor: pointer;
+  }
+  align-items: center;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  color: #4a4a4a;
+  line-height: 1.5;
+  padding: 0.5rem 0.75rem;
+  position: relative;
+}
