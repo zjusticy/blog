@@ -2,7 +2,8 @@ backend:
   name: github
   repo: zjusticy/blog
   branch: main
-  base_url: https://netlify-cms.adrianub.vercel.app
+  base_url: https://blog-six-phi-30.vercel.app
+  auth_endpoint: api/auth
 media_folder: public/img
 public_folder: img
 collections:
