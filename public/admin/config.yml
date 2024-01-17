@@ -4,8 +4,8 @@ repo: zjusticy/blog
 branch: main
 media_folder: public/img
 public_folder: img
-base_url: "https://blog-six-phi-30.vercel.app"
-auth_endpoint: "api/auth"
+base_url: https://blog-six-phi-30.vercel.app
+auth_endpoint: api/auth
 collections:
   - label: "Blog"
     name: "blog"
