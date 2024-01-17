@@ -4,7 +4,7 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 media_folder: public/img
 public_folder: img
-base_url: https://netlify-cms.adrianub.vercel.app
+base_url: https://blog-six-phi-30.vercel.app
 collections:
   - label: "Blog"
     name: "blog"
